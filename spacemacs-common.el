@@ -824,6 +824,9 @@ to 'auto, tags may not be properly aligned. "
      `(powerline-active2 ((,class (:background ,act2 :foreground ,base))))
      `(powerline-inactive1 ((,class (:background ,bg2 :foreground ,base))))
      `(powerline-inactive2 ((,class (:background ,bg2 :foreground ,base))))
+     
+;;;;; proof-general
+     `(proof-locked-face ((,class (:background ,bg2))))
 
 ;;;;; rainbow-delimiters
      `(rainbow-delimiters-depth-1-face ((,class :foreground ,keyword)))
