@@ -181,13 +181,13 @@ to 'auto, tags may not be properly aligned. "
      `(font-lock-comment-face ((,class (:foreground ,(if spacemacs-theme-comment-italic comment-light comment) :background ,(when spacemacs-theme-comment-bg comment-bg) :slant ,(if spacemacs-theme-comment-italic 'italic 'normal)))))
      `(font-lock-constant-face ((,class (:foreground ,const))))
      `(font-lock-doc-face ((,class (:foreground ,meta))))
-     `(font-lock-function-name-face ((,class (:foreground ,func :inherit bold))))
+     `(font-lock-function-name-face ((,class (:foreground ,type :inherit bold))))
      `(font-lock-keyword-face ((,class (:inherit bold :foreground ,keyword :slant ,(if spacemacs-theme-keyword-italic 'italic 'normal)))))
      `(font-lock-negation-char-face ((,class (:foreground ,const))))
      `(font-lock-preprocessor-face ((,class (:foreground ,func))))
      `(font-lock-reference-face ((,class (:foreground ,const))))
      `(font-lock-string-face ((,class (:foreground ,str))))
-     `(font-lock-type-face ((,class (:foreground ,type :inherit bold))))
+     `(font-lock-type-face ((,class (:foreground ,blue))))
      `(font-lock-variable-name-face ((,class (:foreground ,var))))
      `(font-lock-warning-face ((,class (:foreground ,war :background ,bg1))))
      `(fringe ((,class (:background ,bg1 :foreground ,base))))
@@ -827,6 +827,10 @@ to 'auto, tags may not be properly aligned. "
      
 ;;;;; proof-general
      `(proof-locked-face ((,class (:background ,bg2))))
+     `(coq-solve-tactics-face  ((,class (:foreground ,blue))))
+     `(proof-tacticals-name-face ((,class (:foreground ,blue))))
+     `(proof-tactics-name-face ((,class (:foreground ,blue))))
+     `(coq-cheat-face ((,class (:foreground ,err))))
 
 ;;;;; rainbow-delimiters
      `(rainbow-delimiters-depth-1-face ((,class :foreground ,keyword)))
